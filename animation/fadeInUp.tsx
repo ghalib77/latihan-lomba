@@ -18,7 +18,7 @@ const fadeInUp = ({ yHide, yVisible, delay }: FadeInUp) => ({
     opacity: 1,
     transition: {
       duration: 0.5,
-      delay: delay,
+      delay: delay ? delay : null,
       ease: ease,
       stiffness: 150,
       type: "spring",
